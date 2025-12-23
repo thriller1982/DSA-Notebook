@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 4.1)
-project(binary_heap)
+project(binary_heap C)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_C_STANDARD 11)
 
-add_executable(binary_heap main.cpp)
+add_library(binary_heap STATIC library.c)
