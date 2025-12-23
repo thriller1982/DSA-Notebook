@@ -3,4 +3,6 @@ project(binary_heap C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_library(binary_heap STATIC library.c)
+add_library(binary_heap STATIC binary_heap.c
+        fatal.h
+        fatal.c)
